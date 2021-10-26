@@ -1,0 +1,492 @@
+@font-face { font-family: 'Franklin Gothic Medium'; src: url('/fonts/franklin-gothic-medium.ttf');}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.rectangle {
+    margin-top: 3rem;
+    height: 0.1rem;
+    width: 70rem;
+    background-color: #555;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    background-color: black;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    height: 6.9rem;
+    width: 100%;
+    max-width: 100%;
+    z-index: 999;
+}
+
+#navhome {
+    font-weight: normal;
+    font-size: 3rem;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+
+#navicons {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#navbar a {
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+}
+
+#navbar img {
+    width: 3.8rem;
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#navbar img:hover {
+    opacity: 0.8;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    width: 98rem;
+    height:auto;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+#presentation-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 3.8rem;
+    margin-bottom: 5.9rem;
+    margin-bottom: 3.8rem;
+    opacity: 0;
+
+    animation: opacity 2s ease, drop 2s ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#presentation-icons img {
+    width: 5.3rem;
+    margin-left: 2.65rem;
+    margin-right: 2.65rem;
+    mix-blend-mode: multiply;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    transition: opacity .2s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
+}
+
+#presentation-icons img:hover{
+    opacity: 0.8;
+}
+
+#home h1 {
+    font-weight: normal;
+    font-size: 14rem;
+    text-align: center;
+    color: white;
+    opacity: 0;
+
+    animation: opacity 2s ease, drop 2s ease;
+    animation-fill-mode: forwards;
+}
+
+#home h2{
+    font-weight: normal;
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    opacity: 0;
+
+    animation: opacity 2s ease, drop 2s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#home p{
+    
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-size: 2.5rem;
+    text-align: left;
+    color: white;
+    opacity: 0;
+
+    animation: opacity 3s ease;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+}
+
+.page h1 {
+    font-weight: normal;
+    font-size: 7rem;
+    text-align: center;
+    color: #3a3a3a;
+    margin-top: 5.5rem;
+}
+
+.page h2 {
+    font-weight: normal;
+    font-size: 3.5rem;
+    text-align: center;
+    color: #3a3a3a;
+    margin-bottom: 5.3rem;
+}
+
+.page p {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.7rem;
+    text-align: left;
+    color: #3a3a3a;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    max-height: 100vh;
+}
+
+.article-content {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.text {
+    max-width: 55rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    max-width: 55rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.gallery img {
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rectangle {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 0.2rem;
+    width: 100rem;
+    background-color: #555;
+}
+
+@media (max-width: 1024px) {
+    #navbar {
+        height: 6.9rem;
+        width: 100%;
+    }
+    
+    #navhome {
+        font-size: 3rem;
+    }
+    
+    #navbar a {
+        margin-left: 1.9rem;
+        margin-right: 1.9rem;
+    }
+    
+    #navbar img {
+        width: 3.8rem;
+    }
+
+    #presentation {
+        width: 84rem;
+    }
+
+    #presentation-icons img {
+        width: 4.5rem;
+        margin-left: 2.25rem;
+        margin-right: 2.25rem;
+    }
+    
+    #home h1 {
+        font-size: 12rem;
+    }
+    
+    #home h2{
+        font-size: 5rem;
+    }
+
+    #home p {
+        font-size: 2.8rem;
+    }
+
+    .page p {
+        font-size: 2rem;
+    }
+
+    .text {
+        margin: 0;
+        max-width:200rem;
+    }
+
+    .gallery {
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+    .gallery img {
+        max-width: 23rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .page p {
+        font-size: 1.75rem;
+    }
+
+    .gallery {
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+    .gallery img {
+        max-width: 23rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        height: 6.9rem;
+        width: 100%;
+    }
+    
+    #navhome {
+        font-size: 3rem;
+    }
+    
+    #navbar a {
+        margin-left: 1.9rem;
+        margin-right: 1.9rem;
+    }
+    
+    #navbar img {
+        width: 3.8rem;
+    }
+
+    #presentation {
+        width: 65rem;
+    }
+
+    #presentation-icons img {
+        width: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    
+    #home h1 {
+        font-size: 8.8rem;
+    }
+    
+    #home h2{
+        font-size: 4rem;
+    }
+
+    #home p {
+        font-size: 2.4rem;
+    }
+
+    .text {
+        margin: 0;
+    }
+
+    .page p {
+        font-size: 1.75rem;
+    }
+
+    .gallery {
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+    .gallery img {
+        max-width: 23rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        height: 6.9rem;
+        height: 12.9vw;
+        width: 100%;
+    }
+    
+    #navhome {
+        font-size: 3rem;
+        font-size: 5.9vw;
+    }
+    
+    #navbar a {
+        margin-left: 3.9vw;
+        margin-right: 3.9vw;
+    }
+
+    #navbar img {
+        width: 6.3vw;
+    }
+
+    #presentation {
+        width: 40rem;
+    }
+
+    #presentation-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 3.8rem;
+        margin-bottom: 5.9rem;
+        
+        margin-top: 4.8vw;
+        margin-bottom: 6.9vw;
+    }
+
+    #presentation-icons img {
+        width: 7.5vw;
+        margin-left: 3.75vw;
+        margin-right: 3.75vw;
+    }
+    
+    #home h1 {
+        font-size: 14rem;
+        font-size: 16.5vw;
+    }
+    
+    #home h2{
+        font-size: 6rem;
+        font-size: 7vw;
+    }
+
+    #home p {
+        font-size: 4.3vw;
+    }
+
+    .page h1 {
+        font-size: 12vw;
+    }
+
+    .page h2 {
+        font-size: 8vw;
+    }
+
+    .page p {
+        font-size: 1.4rem;
+    }
+
+    .text {
+        margin: 0;
+        max-width: 200rem;
+    }
+
+    .gallery {
+        flex-direction: initial;
+        justify-content: space-between;
+    }
+
+    .gallery img {
+        max-width: 23rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
